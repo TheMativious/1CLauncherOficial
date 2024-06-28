@@ -1,0 +1,82 @@
+<div class="settings-content">
+    <div class="tabs-settings-btn">
+        <button class="tab-btn-css tab-btn active-tab-btn default-tab-btn">Cuentas</button>
+        <button class="tab-btn-css tab-btn">RAM</button>
+        <button class="tab-btn-css tab-btn">Launcher</button>
+        <button class="tab-btn-css save-tabs-btn">Guardar</button>
+    </div>
+
+    <div class="tabs-settings-content active-tab-content">
+        <div class="center-align">
+            <button class="add-account">Presiona aquí para añadir una multicuenta.</button>
+            <div class="accounts"></div>
+        </div>
+    </div>
+
+    <div class="tabs-settings-content">
+        <div class="settings-content-scroll">
+            <div class="title-settings">Memoria RAM asignada para usar el launcher.</div>
+            <div class="java-settings">
+                <div class="information">
+                    Asigna la memoria RAM que usará el launcher para abrir el juego. Entre más ram te irá mejor el juego.<br>
+                    No uses mucha ram dedicada al launcher o si no perderás rendimiento en otras aplicaciones.
+                    <br><br>
+                    <small><b>*El staff dará recomendaciones para tener el mejor rendimiento antes de un evento.</b></small>
+                </div>
+                <div class="ram-info">
+                    <div class="memory-slider" min="0.5" max="8" step="0.5">
+                        <div class="slider-touch-left">
+                            <span value="0 Go"></span>
+                        </div>
+                        <div class="slider-touch-right">
+                            <span value="0 Go"></span>
+                        </div>
+                        <div class="slider-line">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="ram-info-block">
+                        <b>Tienes <span id="total-ram">0 Gb</span> de RAM en tu pc.</b><br>
+                        <b>Tienes <span id="free-ram">0 Gb</span> de RAM disponible.</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs-settings-content">
+        <div class="center-page">
+            <div class="title-settings">Opciones para el launcher.</div>
+            <div class="java-settings">
+                <div class="information">
+                    <input
+                      type="checkbox" 
+                      class="checkbox-settings" 
+                      id="launcher-close"/>
+                    <label 
+                      for="launcher-close">
+                      <div class="checkround"></div>
+                    </label> Cerrar el launcher al iniciar el Juego.</br>
+
+                    <!-- <input 
+                      type="checkbox" 
+                      class="checkbox-settings checkbox-close-all" 
+                      id="launcher-close-all">
+                    <label for="launcher-close-all" class="checkbox-close-all">
+                      <div class="checkround checkbox-close-all"></div>
+                    </label> Fermer le jeu si le launcher est fermé.</br> -->
+
+                    <input 
+                      type="checkbox" 
+                      class="checkbox-settings" 
+                      id="launcher-open">
+                    <label 
+                      for="launcher-open">
+                      <div class="checkround"></div>
+                  </label> Dejar abierto el launcher al iniciar el Juego.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
